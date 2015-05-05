@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+<meta name="robots" content="<{$xoops_meta_robots}>" />
+<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+<meta name="description" content="<{$xoops_meta_description}>" />
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+<meta name="author" content="<{$xoops_meta_author}>" />
+<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+<meta name="generator" content="XOOPS" />
+<title><{$xoops_sitename}> - <{$xoops_pagetitle}></title>
+<link href="<{$xoops_url}>/favicon.ico" rel="SHORTCUT ICON" />
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_url}>/xoops.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_themecss}>" />
+<!-- RMV: added module header -->
+<{$xoops_module_header}>
+
+</head>
+<body>
+<script language="javascript" src="<{$xoops_imageurl}>liveclock.js"></script>
+
+<div id="todo">
+	
+	<div id="reloj">
+		<span style="float: right; width: 300px; display: block; text-align: right; padding-top: 2px;">
+		
+		</span>
+	</div>
+
+	<div id="maincontainer">
+		<table id="inner" width="100%" border="0" cellpadding="0" cellspacing="0" align="default">
+			<!-- This line holds the logo and the banner -->
+			<tr>
+				<td>
+					 <table border="0" width="100%" cellspacing="0" cellpadding="0">
+					 
+					 
+					  <tr>
+    <td width="100%"><img border="0" src="<{$xoops_imageurl}>//header/logorickys.gif" width="750" height="100"></td>
+  </tr>
+					 
+					 
+        <tr>
+          <td width="100%">
+            <table border="0" width="100%" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="20%"><a onMouseOver="if (document.images) document.home.src= '<{$xoops_imageurl}>//header/homehover.gif';" onMouseOut="if (document.images) document.home.src= '<{$xoops_imageurl}>//header/home.gif';" href="index.htm">
+<img src= "<{$xoops_imageurl}>//header/home.gif" alt="Ricky큦 web templates" name="home" border=0 width="150" height="30"></a></td>
+              <td width="20%"><a onMouseOver="if (document.images) document.about.src= '<{$xoops_imageurl}>//header/abouthover.gif';" onMouseOut="if (document.images) document.about.src= '<{$xoops_imageurl}>//header/about.gif';" href="index.htm">
+<img src= "<{$xoops_imageurl}>//header/about.gif" alt="Ricky큦 web templates" name="about" border=0 width="150" height="30"></a></td>
+              <td width="20%"><a onMouseOver="if (document.images) document.services.src= '<{$xoops_imageurl}>//header/serviceshover.gif';" onMouseOut="if (document.images) document.services.src= '<{$xoops_imageurl}>//header/services.gif';" href="index.htm">
+<img src= "<{$xoops_imageurl}>//header/services.gif" alt="Ricky큦 web templates" name="services" border=0 width="150" height="30"></a></td>
+              <td width="20%"><a onMouseOver="if (document.images) document.support.src= '<{$xoops_imageurl}>//header/supporthover.gif';" onMouseOut="if (document.images) document.support.src= '<{$xoops_imageurl}>//header/support.gif';" href="index.htm">
+<img src= "<{$xoops_imageurl}>//header/support.gif" alt="Ricky큦 web templates" name="support" border=0 width="150" height="30"></a></td>
+              <td width="20%"><a onMouseOver="if (document.images) document.contact.src= '<{$xoops_imageurl}>//header/contacthover.gif';" onMouseOut="if (document.images) document.contact.src= '<{$xoops_imageurl}>//header/contact.gif';" href="index.htm">
+          <img src= "<{$xoops_imageurl}>//header/contact.gif" alt="Ricky큦 web templates" name="contact" border=0 width="150" height="30"></a></td>
+            </tr>
+          </table>
+          </td>
+        </tr>
+      </table>
+				</td>
+			</tr>
+			<tr>
+				<td align="left">
+					<table bgcolor="#FFFFFF">
+						
+					</table>
+					<table width="100%" bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0">
+						<tr>
+							<td>
+								<table cellspacing="0">
+									<tr>
+										<td id="leftcolumn">
+											<!-- Start left blocks loop -->
+											<{foreach item=block from=$xoops_lblocks}>
+												<{include file="JamilaCS_04/theme_blockleft.html"}>
+											<{/foreach}>
+											<!-- End left blocks loop -->
+										</td>
+
+										<td id="centercolumn">
+											<!-- First the module's content -->
+											<div id="content">
+												<{$xoops_contents}>
+											</div>
+
+											<!-- Then, whatever center blocks are defined -->
+											<{if $xoops_showcblock == 1}>
+											<!-- First the center-center blocks -->
+											<table cellspacing="0">
+												<tr>
+													<td id="centerCcolumn" colspan="2">
+														<!-- Start center-center blocks loop -->
+														<{foreach item=block from=$xoops_ccblocks}>
+															<{include file="JamilaCS_04/theme_blockcenter_c.html"}>
+														<{/foreach}>
+														<!-- End center-center blocks loop -->
+													</td>
+												</tr>
+												<!-- And then the half-width blocks -->
+												<tr>
+													<td id="centerLcolumn">
+														<!-- Start center-left blocks loop -->
+														<{foreach item=block from=$xoops_clblocks}>
+															<{include file="JamilaCS_04/theme_blockcenter_l.html"}>
+														<{/foreach}>
+														<!-- End center-left blocks loop -->
+													</td>
+													
+													<td id="centerRcolumn">
+														<!-- Start center-right blocks loop -->
+														<{foreach item=block from=$xoops_crblocks}>
+															<{include file="JamilaCS_04/theme_blockcenter_r.html"}>
+														<{/foreach}>
+														<!-- End center-right blocks loop -->
+													</td>
+												</tr>
+											</table>
+
+											<{/if}>
+											
+
+										</td>
+
+										<{if $xoops_showrblock == 1}>
+
+										<td id="rightcolumn">
+											
+											<{foreach item=block from=$xoops_rblocks}>
+												<{include file="JamilaCS_04/theme_blockright.html"}>
+											<{/foreach}>
+											
+										</td>
+
+										<{/if}>
+
+									</tr>
+								</table>
+
+								
+								<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+								>
+									<tr style="background-color: #e7e7e7;">
+										<td width="170"><div style="font-size: xx-small; padding: 0 3px;"></div></td>
+										<td><span style="font-size: 9px;"><{$xoops_footer}></span>
+										</td>
+										<td width="40">&nbsp;</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</div> 
+</div>
+</body>
+</html>
